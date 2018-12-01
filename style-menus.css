@@ -35,8 +35,7 @@
 }
 
 
-/* media query */
-
+/* flexbox media query simple menu */
 @media screen and (min-width: 600px) {
 
     .single-nav ul {
@@ -54,5 +53,40 @@
         flex-basis: auto;
         flex-shrink: 0;
     }
+
+}
+
+/* flexbox media query advanced menu */
+@media screen and (min-width: 600px) {
+
+    .advanced-nav ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .advanced-nav ul li{
+        flex-grow: 1;
+        flex-basis: 220px;
+        flex-shrink: 0;
+    }
+    .advanced-nav ul li a{
+        display: flex;
+
+    }
+    .advanced-nav ul li a .icon{
+        flex-basis: 60px;
+        font-size: 35px;
+    }
+    .advanced-nav ul li a .text{
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .advanced-nav ul li a .text span{
+        display: block;
+        font-size: 15px;
+        font-weight: lighter;
+        font-style: italic;
+    }
+
+
 
 }
